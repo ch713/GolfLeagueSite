@@ -1,12 +1,21 @@
 import React from "react";
-//import Button from 'react-bootstrap/Button'
+import Navbar from "react-bootstrap/Navbar";
 
 class NavBar extends React.Component {
   render() {
-      return (
-        <div>
-            NavBar
-        </div>
+    return (
+      <Navbar bg="light">
+        <Navbar.Brand href="#home">
+          <img
+            alt=""
+            src="/logo.svg"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{" "}
+          Yankee Kraft Golf League
+        </Navbar.Brand>
+      </Navbar>
     );
   }
 }
